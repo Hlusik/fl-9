@@ -1,0 +1,128 @@
+/* 
+
+write your code here
+
+*/
+@media print {
+    .tm-sidebar, section, section #about{
+        display: none;
+    }
+    .tm-main-content{
+        margin: 0;
+        padding: 0;
+    }
+    section:first-of-type{
+        display: block;
+    }
+    h2.tm-section-title{
+        color:blue;
+    }
+    .tm-content-box.flex-2-col{
+        flex-direction: column;
+    }
+    .tm-main-content p:first-letter{
+        color: #373a3c;
+        font-size: 16px;
+    }
+    .pad.flex-item.tm-team-description-container>.tm-section-description{
+        font-style: normal;
+        font-size: 16px;
+        color: #373a3c;
+        line-height: normal;
+    }
+    .tm-team-description-container{
+        max-width: 700px;
+        padding: 0
+    }
+    .tm-main-content>section::before{
+        content: '';
+        border: none;
+    }
+    .tm-banner{
+        height: inherit;
+    }
+    .tm-banner-inner{
+        padding: 50px;
+    }
+    .flex-item img{
+        width: 90%;
+    }
+    p{
+        margin-bottom: 15px;
+    }
+}
+.tm-sidebar, .tm-banner, section{
+    box-shadow: 0 0 15px grey;
+}
+a>img{
+    border-radius: 50%;
+}
+li>h2:hover{
+    background: #76cdd7;
+    color: white;
+    font-weight: 800;
+}
+p:first-letter{
+    color: #76cdd7;
+    font-size: 30px;
+}
+.tm-sidebar, .tm-banner, section{
+    box-shadow: 0 0 15px grey;
+}
+section::before{
+    content: '';
+    border-top: 25px solid #76cdd7;
+    border-right: 120px solid transparent;
+}
+.carousel-content>.flex-item>h2{
+    color: gainsboro;
+    word-spacing: 5px;
+}
+h2+p{
+    font-style: italic;
+}
+section p{
+    line-height: 2;
+}
+.pad a:visited{
+    color:silver;
+}
+.pad a:hover{
+    color:#76cdd7;
+    border-bottom: 2px solid #36b5c4;
+    text-decoration: underline;   
+}
+.pad li:first-of-type::after, .pad li:nth-of-type(3)::after {
+    content: "New";
+    vertical-align: super;
+    color: red;
+    font-size: 10px;
+}
+.box>div>p{
+    font-size: 23px;
+    line-height: normal;
+}
+.box>div>p:first-letter{
+    color: #373a3c;
+    font-size: 30px;
+    font-weight: 400;
+}
+.box>div>h2{
+    font-size: 2.7rem;
+}
+.tm-nav-item{
+    border-bottom: 2px dotted silver;
+}
+.tm-nav-item:last-of-type{
+    border-bottom: none;
+}
+input[type=text], button[type=submit]{
+    color:red;
+}
+button[type=submit]:hover{
+    background: #36b5c4;
+}
+.mandatory-field::after{
+    content: "*";
+    color:red; 
+}
