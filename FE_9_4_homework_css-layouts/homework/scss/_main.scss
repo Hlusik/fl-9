@@ -1,0 +1,174 @@
+body{
+    font-family: $font;    
+    margin: 0;
+    padding: 0;
+    header{
+        background: url('../img/apples.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: $headerColor;
+        display: flex;
+        flex-direction: column;
+        padding: 20px 60px;
+        .top{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 250px;
+            h1{    
+                text-transform: uppercase;
+                flex-grow: 2;
+                font-size: 20px;
+                letter-spacing: 4px;
+                padding: 25px 20px;
+                margin: 0;
+            }
+            nav{
+                padding: 25px 20px;
+                margin-bottom: 50px;   
+                display:flex;
+                flex-grow: 1;
+                justify-content: space-between;        
+                a{                
+                    font-size: 20px;
+                    text-decoration: none;
+                    color: $headerColor;
+                    &:hover{
+                        color: darken($headerColor, 30%);
+                    }
+                }
+            }
+        }
+        article{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            p{
+                font-size: 20px;
+                &:first-of-type{
+                    font-size: 70px;
+                    text-transform: uppercase;
+                    letter-spacing: 11px;
+                    margin: 15px;
+                    span{
+                        font-size: 130px;
+                    }
+                }
+            }
+            button{        
+                margin: 190px;
+                border: 3px solid $headerColor;
+                color: $headerColor;
+                font-size: 19px;
+                background: rgba($subscribeColor, 0.5);
+                padding: 22px 110px;
+                &:hover{
+                    background: rgba($subscribeColor, 0);
+                }
+            }
+        }
+    }
+    h2{
+        font-size: 30px;
+        padding: 190px 0 100px 0;
+        color: $textColor;
+        text-align: center;
+    }
+    section{
+        padding: 0 60px;
+    }
+    .section-text{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        &>p{
+            flex: 50%;
+            font-size: 20px;
+            margin: 170px 70px;
+            color: $textColor;
+            &:first-child{
+                font-size: 30px;
+                span{
+                    font-weight: bold;
+                }
+            }
+        }
+    }    
+    .section-img{
+        display: flex;
+        flex-direction: column;
+        background: $backgroundColor;
+        article{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin: 10px 0;
+            p{
+                flex: 1;
+                display: flex;
+                align-items: center;
+                padding-left: 30px;
+                font-size: 20px;
+                color: $textColor;
+                text-align: center;
+            }
+            img{
+                flex: 2;
+                height: 410px;
+            }  
+            &:nth-child(2n){
+                p{
+                    order:1;
+                }
+                img{
+                    order:2;
+                }
+            }          
+        }
+    }
+    .subscribe{
+        background: $backgroundColor;
+        padding: 60px;
+        .subscribe-wrapper{
+            display: flex;
+            flex-direction: row;
+            background: $headerColor;
+            padding: 45px;
+            p{
+                font-size: 35px;
+                margin: 0;
+                line-height: 2.2;
+                vertical-align: middle;
+                    margin-right: 50px;
+                span{
+                    font-weight: bold;
+                }
+            }
+            input{
+                border: 2px solid $textColor;
+                background: $backgroundColor;
+                padding: 25px 30px;
+                font-size: 18px;
+                flex: 1;
+            }
+            button{
+                border:none;
+                background: $textColor;
+                color: $headerColor;
+                padding: 25px 30px;
+                font-size: 18px;          
+                &:hover{
+                    background: lighten($textColor, 30%);
+                }
+            }
+        }
+    }
+    footer{
+        ul{
+            display: flex;
+            list-style: none;
+            li{
+                flex-grow:1;
+            }
+        }
+    }
+}
