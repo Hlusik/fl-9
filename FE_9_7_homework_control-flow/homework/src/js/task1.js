@@ -1,34 +1,35 @@
 // Your code goes here
 function login(){
-    let userName = prompt("Please enter your User", "User");
+    let userName = prompt('Please enter your User', 'User');
     let password;
     let currentHours;
     if(!userName){
-        alert("Canceled")
+        alert('Canceled')
         return;
     }
     if(userName.length < 4){
-        alert("I don't know any users having name length less than 4 symbols");
+        alert('I don\'t know any users having name length less than 4 symbols');
         return;
     }
-    if(userName === "User"){
-        password = prompt("Please enter your password", "SuperUser");
+    if(userName === 'User'){
+        password = prompt('Please enter your password', 'SuperUser');
         if(!password){
-            alert("Canceled");
+            alert('Canceled');
             return;
         }
-        if(password === "SuperUser"){
+        if(password === 'SuperUser'){
             currentHours = new Date().getHours();
             console.log(currentHours);
             if(currentHours < 20){
-                alert("Good day!")
+                alert('Good day!')
             } else{
-                alert("Good evening!");
+                alert('Good evening!');
             }
         } else{
-            alert("Wrong password");
+            alert('Wrong password');
         }
     } else{
-        alert("I don’t know you");
+        alert('I don’t know you');
     }    
 }
+login();
