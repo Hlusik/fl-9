@@ -11,11 +11,13 @@
     <h1 id="headerText"><span>Todo</span> Cat List</h1>
     <h2 id="errorText"></h2>
     <form>
-      <input type="text" id="addNewTxt" name="addNewTxt" onkeyup="addNewChange()" placeholder="Add new action">
-      <button type="button" id="addNewBtn" disabled onclick="addCheckbox()"><i class="material-icons">add_box</i></button>
+      <div class="inline">
+        <input type="text" id="addNewTxt" name="addNewTxt" onkeyup="addNewChange()" placeholder="Add new action">
+        <button type="button" id="addNewBtn" disabled onclick="addCheckbox()"><i class="material-icons">add_box</i></button>
+      </div>
       <hr>
       <div id="checkBoxContainer" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-      <input type="image" src="assets/img/cat.png" alt="cat" onsubmit="submit();" />
+      <input type="image" id="imgBtn" src="assets/img/cat.png" alt="cat" onsubmit="submit();" />
     </form>
   </div>
 
