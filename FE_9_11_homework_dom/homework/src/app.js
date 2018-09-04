@@ -5,6 +5,7 @@ function createCheckbox(text, id){
     divBlock.id = 'divBlock_' + id;
     divBlock.setAttribute('draggable', 'true');
     divBlock.setAttribute('ondragstart', 'drag(event)');
+    divBlock.classList.add('checkboxCont');
 
     let label= document.createElement('label');
     let description = document.createTextNode(text);
@@ -16,7 +17,7 @@ function createCheckbox(text, id){
     checkbox.name = id + '_' + text;  
     checkbox.value = text;   
     checkbox.setAttribute('onchange', 'checkBoxChecked(' + id + ')');
-    checkbox.id = 'checkbox_' + id;  
+    checkbox.id = 'checkbox_' + id;     
     label.appendChild(checkbox);         
 
     divBlock.appendChild(label);
