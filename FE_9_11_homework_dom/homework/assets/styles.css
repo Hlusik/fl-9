@@ -1,0 +1,12 @@
+/* Your styles goes here */
+h1 span{
+    text-transform: uppercase;
+}
+#errorText
+{
+    display:none;
+}
+#checkBoxContainer div
+{
+    margin: 10px 0;
+}

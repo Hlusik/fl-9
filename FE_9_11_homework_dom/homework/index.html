@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Homework 11 - TODO Cat List</title>
+  <link rel="stylesheet" href="./assets/material-icons/material-icons.css">
+  <link rel="stylesheet" href="./assets/styles.css">
+</head>
+<body>
+  <div id="root">
+    <h1 id="headerText"><span>Todo</span> Cat List</h1>
+    <h2 id="errorText"></h2>
+    <form>
+      <input type="text" id="addNewTxt" name="addNewTxt" onkeyup="addNewChange()" placeholder="Add new action">
+      <button type="button" id="addNewBtn" disabled onclick="addCheckbox()"><i class="material-icons">add_box</i></button>
+      <hr>
+      <div id="checkBoxContainer" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+      <input type="image" src="assets/img/cat.png" onsubmit="submit();" />
+    </form>
+  </div>
+
+  <script src="./src/app.js"></script>
+</body>
+</html>
